@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { school, socials } from "@/lib/content";
 
 export function SiteFooter() {
@@ -5,7 +6,8 @@ export function SiteFooter() {
     <footer id="kontakt" className="bg-violet-deep text-brass">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <p className="font-display text-3xl text-white">Dream Dance</p>
+          <Image src="/logo.png" alt="" width={300} height={300} className="h-28 w-28" />
+          <p className="mt-4 font-display text-3xl text-white">Dream Dance</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-brass/90">
             Tanzschule im {school.studio}, {school.city}. Unterricht {school.days}.
           </p>

@@ -76,12 +76,4 @@ export function CourseIcon({ name }: { name: Course["icon"] }) {
   }
 }
 
-export function Mark({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden>
-      <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M11 27c2.2-8 5.4-13 9-13s6.8 5 9 13" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-      <path d="M15.5 18.5c1.6 2.4 7.4 2.4 9 0" fill="none" stroke="#c6a15b" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
+

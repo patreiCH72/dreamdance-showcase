@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav, school } from "@/lib/content";
-import { Mark } from "./Icons";
 
 function isActive(path: string, href: string) {
   if (href.startsWith("/#")) return false;
@@ -40,7 +40,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-violet/10 bg-paper/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link href="/" className="flex items-center gap-3 rounded-full" aria-label="Dream Dance, zur Startseite">
-          <Mark className="h-10 w-10 text-violet" />
+          <Image src="/logo.png" alt="" width={300} height={300} className="h-12 w-12" priority />
           <span>
             <span className="block font-display text-xl leading-none tracking-tight text-violet">Dream Dance</span>
             <span className="mt-1 block text-[0.68rem] font-medium uppercase tracking-[0.22em] text-gold-deep">
